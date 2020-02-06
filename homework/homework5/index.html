@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="js.js" rel="jQuery">
+        <link href="contact.php" rel="php">
+        <title>Homework 5</title>
+    </head>
+    <body>
+        <table border=1>
+            <tr>
+                <th>Cell 1</th>
+                <th>Cell 2</th>
+                <th>Cell 3</th>
+            </tr>
+            <tr>
+                <td colspan="3">Cell 4,5,6</td>
+            </tr>
+            <tr>
+                <td>Cell 7</td>
+                <td rowspan="2">Cell 8,11</td>
+                <td>Cell 9</td>
+            </tr>
+            <tr>
+                <td>Cell 10</td>
+                <td>Cell 12</td>
+            </tr>
+        </table>
+
+        <form id="form1" name="form1" class="form1" action="contact.php" method="POST">
+            <div style="padding: 10px 0px;"><input type="text" name="name" id="name" placeholder="Name" maxlength="30" required/></div>
+            <div style="padding: 0px 0px 10px;"><input type="tel" name="tel" id="tel" placeholder="Telephone" maxlength="30" required/></div>
+            <div style="padding: 0px 0px 10px;"><textarea type="textarea" name="textarea" id="textarea" placeholder="Message"></textarea></div>
+            <div style="padding: 0px 0px 10px;"><select name="list">
+                <option value="none" hidden="">Choose option</option>
+                <option value="Option-1">Option 1</option>
+                <option value="Option-2">Option 2</option>
+                <option value="Option-3">Option 3</option>
+                <option value="Option-4">Option 4</option>
+                <option value="Option-5">Option 5</option>
+            </select></div>
+            <div><button name="button" value="Sent">Sent</button></div>
+        </form>
+        <div id="modal_window">Thank you for message! We will contact you shortly.</div>
+    </body>
+</html>
