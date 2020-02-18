@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /catalog
+Disallow: /autor
+Disallow: /feed
+Host:"https://airandco.ua"
+Sitemap:https://airandco.ua/map.xml

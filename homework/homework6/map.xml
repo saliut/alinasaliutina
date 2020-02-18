@@ -1,0 +1,30 @@
+<?xml version="1.0" encording="UTF-8"?>
+<urlset xmlns="https://airandco.ua/shemas/sitemap/9.0">
+    <url>
+    <loc>https://airandco.ua</loc>
+    <lastmod>2020-02-17T16:02:20+03:00</lastmod>
+    <chanfreq>always</chanfreq>
+    <priority>0.2</priority>
+    </url>
+
+    <url>
+    <loc>https://airandco.ua/contact</loc>
+    <lastmod>2020-02-17T16:02:20+03:00</lastmod>
+    <chanfreq>always</chanfreq>
+    <priority>0.3</priority>
+    </url>
+
+    <url>
+    <loc>https://airandco.ua/about</loc>
+    <lastmod>2020-02-17T16:02:20+03:00</lastmod>
+    <chanfreq>always</chanfreq>
+    <priority>0.2</priority>
+    </url>
+
+    <url>
+    <loc>https://airandco.ua/uslugi</loc>
+    <lastmod>2020-02-17T16:02:20+03:00</lastmod>
+    <chanfreq>always</chanfreq>
+    <priority>0.4</priority>
+    </url>
+</urlset>
