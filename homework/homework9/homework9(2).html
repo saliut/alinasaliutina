@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Homework 9</title>
+<style>
+body{
+    background-color: #797979;
+}
+
+.forma{
+    width: 250px;
+    background-color: #dcdcdc;
+    text-transform:uppercase;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.973);
+    border-radius: 10px;
+    margin-top: 130px;
+}               
+
+.text{
+    color: #cb564d;
+    text-align: center;
+    font-weight: bold;
+    padding: 25px 0 40px 0;
+    font-size: 25px;
+}
+
+.input{
+    color: lightslategray;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 22px;
+    margin-right: 22px;
+}
+
+
+input, textarea{
+    width: 200px;
+    height: 35px;    
+}
+
+::-webkit-input-placeholder{
+    text-transform: uppercase;
+    padding-left: 15px;
+}
+
+ ::-moz-placeholder{
+    text-transform: uppercase;
+    padding-left: 15px;
+}
+        
+:-moz-placeholder{
+    text-transform: uppercase;
+    padding-left: 15px;
+}
+
+:-ms-input-placeholder{
+    text-transform: uppercase;
+    padding-left: 15px;
+}
+
+button{
+    background-color: #cb564d;
+    color: white;
+    font-size: 17px;
+    margin-bottom: 50px;
+    width: 207px;
+    height: 35px;
+    border-radius: 6px;
+}
+</style>
+</head>
+<body>
+    <div class="forma">
+        <div class="text">Ваш вопрос</div>
+        <form id="form1" name="form1" class="form1">
+            <div class="input"><input type="text" name="name" id="name" placeholder="Имя" required/></div>
+            <div class="input"><input type="text" name="email" id="email" placeholder="E-mail" required/></div>
+            <div class="input"><textarea type="textarea" name="textarea" id="textarea" placeholder="Комментарий"></textarea></div>
+            <div class="input"><button name="button" value="Sent">Заказать</button>
+        </form>
+    </div>
+</body>
+</html>

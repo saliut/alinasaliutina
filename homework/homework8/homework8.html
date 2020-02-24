@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Homework8</title>
+<link rel="stylesheet" href="fonts/stylesheet.css" />
+<style>
+body{
+    background-color: lightgray;
+}
+
+h1{
+    font-family: 'anonymous_proregular' ;
+    font-size: 20px;
+    text-align: center;
+}
+
+textarea{
+    resize: none;
+}
+
+.forma{
+    
+    width: 270px;
+    border: 3px solid darkgreen;
+    text-align: center;
+    margin: 0 auto 0 auto;
+    padding: 10px 0 10px 0;
+}
+
+.in{
+    padding: 3px;
+}
+
+button{
+    background-color: gray;
+}
+
+button:hover{
+    background-color: green;
+}
+
+ul{
+    font-family: 'anonymous_proregular';
+    font-size: 30px;
+    display: block;
+    list-style: none;
+    padding: 5px;
+}
+
+li:hover{
+    background-color:darkred;
+}
+
+.main:active{
+    color: black;
+    background-color: beige;
+}
+
+.main:visited{
+    color: white;
+    background-color: blue;
+}
+
+.main:focus{
+    color:red ;
+    background-color:royalblue ;
+}
+.main:link{
+    color: yellow;
+    background-color:yellowgreen ;
+}
+
+.about:active{
+    color: palevioletred;
+    background-color: black;
+}
+
+.about:visited{
+    color:teal ;
+    background-color: tomato;
+}
+
+.about:focus{
+    color: floralwhite;
+    background-color: firebrick;
+}
+
+.about:link{
+    color:gold ;
+    background-color:darkolivegreen ;
+}
+
+.contacts:active{
+    color:aqua ;
+    background-color: darkblue;
+}
+
+.contacts:visited{
+    color: navajowhite;
+    background-color: navy;
+}
+
+.contacts:focus{
+    color: mintcream;
+    background-color:maroon ;
+}
+
+.contacts:link{
+    color:cornsilk ;
+    background-color:chocolate ;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*font-family: 'anonymous_proregular';*/
+/*font-family: 'anonymous_probold';*/
+/*font-family: 'anonymous_probold_italic';*/
+/*font-family: 'anonymous_proitalic';*/
+
+</style>
+</head>
+<body>
+    
+    <h1>Заполните форму</h1>
+
+    <div class="form">
+    <form id="forma" class="forma" name="forma">
+        <div class="in"><input type="text" id="name" name="name" placeholder="Enter your name" required/></div>
+        <div class="in"><input type="tel" id="tel" name="tel" placeholder="Enter your telephone" required/></div>
+        <div class="in"><input type="text" id="email" name="email" placeholder="Enter your e-mail" required/></div>
+        <div class="in"><textarea type="textarea" id="com" name="com" placeholder="Enter your comment" maxlength="150" rows="2" cols="22"></textarea></div>
+        <div class="in"><button id="but">Sent</button></div>
+    </form>
+    </div>
+
+    <div class="menu">
+        <ul>
+            <li><a href="#" class="main">Main</a></li>
+            <li><a href="#" class="about">About us</a></li>
+            <li><a href="#" class="contacts">Contacts</a></li>
+        </ul>
+    </div>
+</body>
+</html>
