@@ -1,0 +1,293 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Cozy House</title>
+</head>
+<style>
+*{
+	padding:0;
+	margin:0;
+	}
+body, html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+.for_page {
+    position: relative;
+    min-height: 100%;
+}
+.page {
+	padding-bottom: 104px;
+}
+
+.container{
+	width:1170px;
+	margin:0 auto;
+}
+
+.logo{
+	max-width:100px;
+	width:100%;
+	display:inline-block;
+}
+
+.logo img{
+	width: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.text_header{
+	display:inline-block;
+	vertical-align: top;
+	font-size:25px;
+	color:#2f2625;
+	padding-top:20px;
+}
+
+.tel_header{
+	display:inline-block;
+	vertical-align: top;
+	text-decoration:none;
+	transition:0.3s;
+	color:#2f2625;
+	font-size:25px;
+	padding-top:20px;
+}
+
+.header{
+	padding-top:15px;
+}
+
+.box_heder{
+	width:35%;
+	text-align:center;
+}
+
+/*nav*/
+.nav-menu{
+	background:#463932;
+	
+}
+
+ul.main-menu > li.list{
+	list-style:none;
+	display:inline-block;
+	padding: 20px 20px;
+	transition:0.3s;
+}
+
+ul.main-menu > li.list >a{
+	text-decoration:none;
+	color:#fff;
+	font-size:16px;
+}
+
+ul.main-menu > li.active,
+ul.main-menu > li.list:hover{
+	background:#352f2f;
+}
+
+ul.main-menu > li.list:nth-child(-n+3){
+	position:relative;
+}
+
+ul.child-menu{
+	position:absolute;
+    width: 160px;
+    background: #946a4f;
+    top: 57px;
+    display:none;
+	z-index: 9;
+}
+
+ul.child-menu-last > li.list,
+ul.child-menu >li.list{
+	list-style:none;
+	padding: 10px 20px;
+	transition:0.3s;
+}
+
+ul.child-menu-last > li.list > a,
+ul.child-menu >li.list >a{
+	text-decoration:none;
+	color:#fff;
+	font-size:16px;
+}
+
+ul.child-menu-last > li.list:hover,
+ul.child-menu >li.list:hover{
+	background:#a06640;
+	}
+	ul.child-menu-last{
+	position: absolute;
+    left: 160px;
+    top: 1px;
+    width: 200px;
+    background: #b6906c;
+    display: none;
+}
+
+ul.main-menu > li.list:hover:nth-child(-n+3) ul.child-menu{
+	display:block;
+}
+
+ul.child-menu > li.list:hover:first-child ul.child-menu-last{
+	display:block;
+}
+
+.slider{
+	background:url(img/main.jpg) no-repeat;
+	background-size:cover;
+	widows: 100;
+	padding: 200px 0;
+    background-position: bottom center;
+}
+
+.slider h1{
+	font-size:35px;
+	color:wheat;
+	font-weight:bold;
+	max-width: 600px;
+}
+
+.slider p{
+	font-size:20px;
+	color:wheat;
+	padding-top:30px;
+	font-style:italic;
+	max-width: 600px;
+}
+
+.footer{
+	width:100%;
+	background:#b6906c;
+	color: #2f2625;
+	position:absolute;
+	left:0;
+	bottom:0;
+}
+
+footer h2{
+	color: #2f2625;
+	font-size: 20px;
+}
+
+footer p, a{
+	color: #2f2625;
+	font-size: 15px;
+}
+
+footer .text_header{
+	padding-left: 105px;
+}
+
+
+</style>
+<body>
+
+<header class="header">
+   <div class="container">
+		<a href="/" class="logo box_heder"><img src="img/logo3.png" alt="Logo"/></a>
+        <div class="text_header box_heder">
+			<p>Cozy House</p>
+			<p>Shelter for pets in Boston</p>
+		</div>
+        <div class="tel_header box_heder">
+			<p>Not only people  need a house</p>
+		</div>
+    </div>
+    
+    <nav class="nav-menu">
+    		 <div class="container">
+             		<ul class="main-menu">
+                        <li class="list">
+                            <a href="#">About the shelter</a>
+                            <ul class="child-menu">
+                                <li class="list"><a href="#">Foundation History</a></li>
+                                <li class="list"><a href="#">Animal Living Conditions</a></li>
+                                <li class="list"><a href="#">Workers</a></li>
+                                <li class="list"><a href="#">News</a></li>
+                            </ul>
+                        </li>
+                        <li class="list">
+                            <a href="#">Our pets</a>
+                            <ul class="child-menu">
+                                <li class="list">
+                                    <a href="#">Dogs</a>
+                                    <ul class="child-menu-last">
+                                        <li class="list"><a href="#">Big</a></li>
+                                        <li class="list"><a href="#">Medium</a></li>
+                                        <li class="list"><a href="#">Small</a></li>
+                                    </ul>
+                                </li>
+                                <li class="list">
+                                    <a href="#">Cats</a>
+                                    <ul class="child-menu-last">
+                                        <li class="list"><a href="#">Big</a></li>
+                                        <li class="list"><a href="#">Medium</a></li>
+                                        <li class="list"><a href="#">Small</a></li>
+                                    </ul>
+                                </li>
+                                <li class="list">
+                                    <a href="#">Parrots</a>
+                                    <ul class="child-menu-last">
+                                        <li class="list"><a href="#">Big</a></li>
+                                        <li class="list"><a href="#">Medium</a></li>
+                                        <li class="list"><a href="#">Small</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list">
+                            <a href="#">To help the shelter</a>
+                            <ul class="child-menu">
+                                <li class="list"><a href="#">Become a volunteer</a></li>
+                                <li class="list"><a href="#">Become a sponsor</a></li>
+                            </ul>
+                        </li>
+                        <li class="list">
+                            <a href="#">Contacts</a>
+                        </li>
+                    </ul>
+             </div>
+    </nav>
+</header>
+
+<div class="for_page">
+<main class="page">
+		<section class="slider">
+            <div class="container">
+                    <h1>About the shelter
+						“Cozy House”</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur blandit condimentum. Proin accumsan lorem vel gravida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc.</p>
+
+					<p>Donec consectetur, diam in porta tempus, urna ligula vestibulum nibh, ac ornare felis justo nec leo. Praesent mattis nibh quis 
+						ultrices pharetra. Morbi tempus at ante sit amet tristique. 
+						Maecenas dignissim justo orci, in laoreet urna dapibus nec. Praesent quis tortor faucibus, tristique ante vitae, dignissim 
+						lorem. Sed at ligula et sem mattis gravida ac vel erat. </p>
+            </div>
+        </section>
+
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <a href="/" class="logo box_heder"><img src="img/logo3.png" alt="Logo" /></a>
+        <div class="text_header box_heder">
+			<h2>For questions and suggestions</h2>
+			<a href="email@shelter.com">email@shelter.com</a> <br>
+			<a href="+13 674 567 75 54">+13 674 567 75 54</a>
+		</div>
+        <div class="tel_header box_heder">
+			<h2>We are waiting for your visit</h2>
+			<p>Boston, Central Street, 1st</p>
+		</div>
+    </div>
+</footer>
+</div>
+
+</body>
+</html>
