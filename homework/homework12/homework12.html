@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Homework12</title>
+</head>
+
+<style>
+.image{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border: solid 2px black;
+    margin-bottom: 30px;
+}
+
+.image img{
+    transition: all 1s ease-out;
+}
+
+.image img:hover{
+    transform: scaleX(-1);
+}
+
+.right {
+	position: relative;
+	margin-left: 200px;
+}
+
+.square {
+	width: 100px;
+    height: 100px;
+	position: relative;
+	background-color: green;
+	animation: square 8s;
+	animation-iteration-count: 3;
+    box-shadow: 0px 0px 18px 15px rgba(0,0,0,0.75);
+}
+
+@keyframes square {
+	0% {
+		top:0;
+		left:0;
+        background-color: green;
+	}
+
+	30% {
+		top:0;		
+		left: 400px;
+        background-color: red;				
+	}
+
+	60% {
+		top:400px;	
+		left:400px;	
+        background-color: blue;		
+	}
+
+	80% {
+		top:400px;	
+		left:0;
+        background-color: black;
+	}
+
+	100%{
+		top:0;
+        background-color: yellow;
+		}
+}
+
+.triangle {
+	position: relative;
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid red;
+	animation: triangle 8s;
+	animation-iteration-count: 3;
+    box-shadow: inset 0px 0px 18px 15px black;
+    
+}
+
+@keyframes triangle {
+	0% {
+		top:0;
+		left:0;
+        border-bottom: 100px solid red;
+	}
+
+	30% {
+		top:0;		
+		left: 500px;
+        border-bottom: 100px solid hotpink;				
+	}
+
+	60% {
+		top:450px;	
+		left:500px;	
+        border-bottom: 100px solid rebeccapurple;		
+	}
+
+	80% {
+		top:400px;	
+		left:0;
+        border-bottom: 100px solid silver;
+	}
+
+	100%{
+		top:0;
+        border-bottom: 100px solid aqua;
+		}
+}
+
+.round {
+	position: relative;
+	width: 100px;
+	height: 100px;
+	background: paleturquoise;
+	border-radius: 50px;
+	animation: round 8s;
+	animation-iteration-count: 3;
+}
+
+@keyframes round {
+	0% {
+		top:0;
+		left:0;
+        background-color: paleturquoise;
+	}
+
+	30% {
+		top:0;		
+		left: 600px;
+        background-color: violet;				
+	}
+
+	60% {
+		top:400px;	
+		left:600px;	
+        background-color: khaki;		
+	}
+
+	80% {
+		top:500px;	
+		left:0;
+        background-color: seagreen;
+	}
+
+	100%{
+		top:0;
+        background-color: peru;
+		}
+}
+</style>
+
+<body>
+    <div class="image"><img class="dog" src="img/dog.jpg"></div>
+    <div class="right">
+        <div class="square"></div>
+        <div class="triangle"></div>
+        <div class="round"></div>
+	</div>
+</body>
+</html>

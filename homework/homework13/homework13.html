@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Homework13</title>
+</head>
+
+<style>
+*{
+	padding:0;
+	margin:0;
+}
+
+.first{
+    font-size: 60px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: linear-gradient(rgb(235, 58, 58), rgb(65, 65, 214));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #0B2349;
+    text-align:center;
+}
+
+.second{
+	font-size: 60px;
+    font-weight: bold;
+    text-transform: uppercase;
+	text-align:center;
+	color: transparent;
+    -webkit-text-stroke: 3px rgb(49, 110, 190);
+}
+
+.animation{
+	background-image:url(img/ani.png);
+	width:calc(2000px/10);
+	height:509px;
+	animation-name:animation;
+	animation-duration:1s;
+	animation-iteration-count:infinite;
+	animation-timing-function:steps(10);
+	}
+@keyframes animation{
+	from{
+		background-position:0px;
+		}
+		to{
+			background-position: -2000px;
+		}
+}
+
+.main{
+    display: flex;
+    width: 400px;
+    height: auto;
+    border: 2px solid black;
+    background-color: silver;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.flex{
+    border: 0.5px solid black;
+    flex-direction: row;
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+}
+
+.flex:nth-child(1){
+    background-color: green;
+    height: 90px;
+}
+
+.flex:nth-child(2){
+    background-color: red;
+}
+
+.flex:nth-child(3){
+    background-color: yellow;
+}
+
+.flex:nth-child(4){
+    background-color: blue;
+}
+
+.flex:nth-child(5){
+    background-color:orange;
+    height: 40px;
+}
+</style>
+<body>
+    <div class="first">Homework 13</div>
+    <div class="second">Homework 13</div>
+    <div class="animation"></div>
+    <div class="main">
+        <div class="flex">1</div>
+        <div class="flex">2</div>
+        <div class="flex">3</div>
+        <div class="flex">4</div>
+        <div class="flex">5</div>
+    </div>
+</body>
+</html>
